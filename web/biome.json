@@ -1,0 +1,4 @@
+{
+  "formatter": { "indentStyle": "space" },
+  "linter": { "enabled": true }
+}

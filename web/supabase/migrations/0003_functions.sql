@@ -1,0 +1,1 @@
+-- Funções RPC: reservar_pedidos (máx. 3 por viagem), iniciar_viagem (gera código) e confirmar_entrega (valida código e tentativas).

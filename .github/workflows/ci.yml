@@ -1,0 +1,8 @@
+# CI: substituir o job abaixo por lint e testes (npm run lint, npm test) quando vanilla/ e web/ existirem.
+name: ci
+on: workflow_dispatch
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Configurar lint e testes"

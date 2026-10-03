@@ -1,0 +1,1 @@
+-- Dados iniciais: categorias e produtos de exemplo.

@@ -1,0 +1,1 @@
+-- Políticas de RLS: cliente vê os próprios pedidos, entregador vê só 'Pronto' e a própria viagem, empresa vê tudo.

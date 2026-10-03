@@ -1,0 +1,1 @@
+-- Tabelas: profiles, categories, products, orders, order_items, deliveries (ver docs/data-model.md).

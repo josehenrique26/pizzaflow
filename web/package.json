@@ -1,0 +1,11 @@
+{
+  "name": "pizzaflow-web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Projeto 1.2 (Next.js + Supabase). Instalar com: npm install next react react-dom @supabase/supabase-js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  }
+}

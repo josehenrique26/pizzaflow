@@ -1,0 +1,2 @@
+// Card de pedido.
+export {};

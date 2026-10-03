@@ -1,0 +1,26 @@
+/* CSS compartilhado das telas estáticas: tokens de cor em :root e componentes base (card, btn, badge). */
+:root {
+  --tomato: #c8321f;
+  --cheese: #f5c542;
+  --basil: #2f7d4f;
+  --cream: #fff8ec;
+  --ink: #2a1a14;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --cream: #1e1512; --ink: #f6ece2; }
+}
+body { background: var(--cream); color: var(--ink); font-family: system-ui, sans-serif; }
+.site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; padding: .75rem 1rem; background: var(--tomato); color: #fff; }
+.card { background: color-mix(in srgb, var(--cream) 80%, #fff); border: 1px solid color-mix(in srgb, var(--ink) 20%, transparent); border-radius: .75rem; padding: 1rem; }
+.input { display: block; width: 100%; margin-top: .25rem; padding: .5rem; border: 1px solid color-mix(in srgb, var(--ink) 35%, transparent); border-radius: .5rem; background: transparent; color: inherit; }
+.btn { background: var(--tomato); color: #fff; padding: .5rem 1rem; border-radius: .5rem; font-weight: 600; }
+.btn:hover { filter: brightness(.9); }
+.btn:focus-visible, .input:focus-visible, a:focus-visible { outline: 3px solid var(--cheese); outline-offset: 2px; }
+.badge { display: inline-block; padding: .125rem .5rem; border-radius: 999px; font-size: .8rem; color: #222; }
+.badge-received { background: #d9d9d9; }
+.badge-preparing { background: var(--cheese); }
+.badge-ready { background: #a9d1f5; }
+.badge-delivering { background: #f5a65b; }
+.badge-delivered { background: var(--basil); color: #fff; }
+.code-box { text-align: center; padding: 1rem; border: 2px dashed var(--tomato); border-radius: .75rem; }
+th, td { padding: .5rem; }
