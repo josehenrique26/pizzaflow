@@ -1,25 +1,14 @@
 <!DOCTYPE html>
+<!-- Tela: Cadastro de cliente ou entregador. Etapa inicial: HTML + CSS estáticos com dados fictícios, sem JavaScript funcional. -->
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cadastro | PizzaFlow</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro | PizzaFlow</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../assets/css/styles.css">
 </head>
-<body>
-  <header class="site-header"><a href="../../index.html" class="font-bold">PizzaFlow</a><nav class="flex flex-wrap gap-3 text-sm"><a href="login.html" class="underline">Login</a> <a href="register.html" class="underline">Cadastro</a></nav></header>
-  <!-- Tela: Cadastro: nome, telefone, e-mail, senha e perfil (cliente ou entregador). Substitua o conteúdo de <main> pelo layout do Figma. -->
-  <main class="p-4 max-w-5xl mx-auto">
-    <h1 class="text-2xl font-bold mb-4">Cadastro</h1>
-    <form class="card max-w-sm mx-auto space-y-3">
-  <label class="block">Nome <input class="input"></label>
-  <label class="block">Telefone <input class="input" placeholder="(83) 90000-0000"></label>
-  <label class="block">E-mail <input type="email" class="input"></label>
-  <label class="block">Senha <input type="password" class="input"></label>
-  <label class="block">Perfil <select class="input"><option>Cliente</option><option>Entregador</option></select></label>
-  <button type="button" class="btn">Criar conta</button>
-</form>
-  </main>
+<body class="">
+<main class="auth"><section class="hero"><a class="logo lt" href="../../index.html"><img src="../assets/img/logo.svg" alt="" width="30" height="30"><span>Pizza<b>Flow</b></span></a><div><p class="kick y">Feito para quem ama pizza</p><h1>Seu próximo pedido começa aqui.</h1><p>Simples para pedir. Poderoso para gerenciar. Rápido para entregar.</p></div></section><section class="pane"><form class="fm" action="../client/menu.html"><p class="kick">Boas-vindas</p><h2>Crie sua conta</h2><p class="mu">Leva menos de dois minutos.</p><div class="roles"><input type="radio" id="r1" name="papel" value="cliente" checked><label for="r1"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Cliente</label><input type="radio" id="r2" name="papel" value="entregador"><label for="r2"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg> Entregador</label></div><div class="f err"><label for="n">Nome completo</label><input id="n" name="nome" placeholder="Ex: Marina Oliveira"><small>Informe seu nome completo</small></div><div class="f"><label for="t">Telefone</label><input id="t" type="tel" name="telefone" placeholder="(11) 99999-9999"></div><div class="f"><label for="e">E-mail</label><input id="e" type="email" name="email" placeholder="voce@email.com"></div><div class="f err"><label for="s">Senha</label><input id="s" type="password" name="senha" placeholder="Mínimo de 8 caracteres"><small>A senha deve ter pelo menos 8 caracteres</small></div><button class="btn block" type="submit">Criar conta</button><p class="alt">Já tem uma conta? <a href="login.html">Entrar</a></p></form></section></main>
 </body>
 </html>

@@ -1,19 +1,14 @@
 <!DOCTYPE html>
+<!-- Tela: Acompanhamento do pedido com código de entrega. Etapa inicial: HTML + CSS estáticos com dados fictícios, sem JavaScript funcional. -->
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Acompanhamento | PizzaFlow</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acompanhamento | PizzaFlow</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../assets/css/styles.css">
 </head>
-<body>
-  <header class="site-header"><a href="../../index.html" class="font-bold">PizzaFlow</a><nav class="flex flex-wrap gap-3 text-sm"><a href="menu.html" class="underline">Cardápio</a> <a href="cart.html" class="underline">Carrinho</a> <a href="orders.html" class="underline">Meus pedidos</a> <a href="order-tracking.html" class="underline">Acompanhamento</a></nav></header>
-  <!-- Tela: Acompanhamento: linha do tempo do status e cartão com o código de entrega (aparece em 'Saiu para entrega'). Substitua o conteúdo de <main> pelo layout do Figma. -->
-  <main class="p-4 max-w-5xl mx-auto">
-    <h1 class="text-2xl font-bold mb-4">Acompanhamento</h1>
-    <div class="card space-y-3"><p class="font-semibold">Pedido #1024</p><p><span class="badge badge-received">Recebido</span> <span class="badge badge-preparing">Em preparo</span> <span class="badge badge-ready">Pronto</span> <span class="badge badge-delivering">Saiu para entrega</span> <span class="badge badge-delivered">Entregue</span></p>
-  <div class="code-box"><p class="text-sm">Código de entrega</p><p class="text-4xl font-bold tracking-widest">4 7 2 9</p><p class="text-sm">Informe este código ao entregador.</p></div></div>
-  </main>
+<body class="">
+<header class="top"><div class="top-in"><a class="logo " href="menu.html"><img src="../assets/img/logo.svg" alt="" width="30" height="30"><span>Pizza<b>Flow</b></span></a><nav><a href="menu.html">Cardápio</a><a href="orders.html" class="on">Meus pedidos</a></nav><div class="acts"><a class="sq" href="../auth/login.html" aria-label="Entrar"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg></a><a class="sq red" href="cart.html" aria-label="Carrinho com 2 itens"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 2h2l2.7 12.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6L22 7H5"/></svg><i class="dot">2</i></a></div></div></header><main class="wrap narrow"><a class="back" href="orders.html"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg> Meus pedidos</a><p class="kick">Pedido #1045</p><div class="row2"><h1 class="h1">Está a caminho!</h1><span class="bd s4">Saiu para entrega</span></div><p class="mu">João está levando seu pedido até você.</p><section class="codebox"><div><p class="kick">Código de entrega</p><div class="digits" aria-label="Código 4 7 2 9"><span>4</span><span>7</span><span>2</span><span>9</span></div></div><p>Informe este código ao entregador para confirmar o recebimento.</p></section><section class="card"><h2 class="h3">Acompanhe seu pedido</h2><ol class="steps"><li class="st d"><i><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><b>Recebido</b><small>19:42</small></li><li class="st d"><i><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><b>Em preparo</b><small>19:45</small></li><li class="st d"><i><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><b>Pronto</b><small>20:03</small></li><li class="st d"><i><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><b>Saiu para entrega</b><small>20:08</small></li><li class="st"><i>5</i><b>Entregue</b><small>Aguardando</small></li></ol><p class="line"><span>1× Frango com Catupiry</span><b>R$ 51,00</b></p></section></main>
 </body>
 </html>

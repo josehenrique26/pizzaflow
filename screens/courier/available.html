@@ -1,22 +1,14 @@
 <!DOCTYPE html>
+<!-- Tela: Pedidos Prontos (bairro, itens e valor) com seleção de até 3. Etapa inicial: HTML + CSS estáticos com dados fictícios, sem JavaScript funcional. -->
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pedidos disponíveis | PizzaFlow</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../assets/css/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedidos disponíveis | PizzaFlow</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../assets/css/styles.css">
 </head>
-<body>
-  <header class="site-header"><a href="../../index.html" class="font-bold">PizzaFlow</a><nav class="flex flex-wrap gap-3 text-sm"><a href="available.html" class="underline">Pedidos disponíveis</a> <a href="trip.html" class="underline">Viagem atual</a></nav></header>
-  <!-- Tela: Pedidos prontos (só bairro, itens e valor, sem endereço), seleção de até 3 e botão Iniciar viagem. Substitua o conteúdo de <main> pelo layout do Figma. -->
-  <main class="p-4 max-w-5xl mx-auto">
-    <h1 class="text-2xl font-bold mb-4">Pedidos disponíveis</h1>
-    <div class="space-y-3">
-  <label class="card flex items-center gap-3"><input type="checkbox"> <span>#1023 - Bairro Centro - 1x Calabresa - R$ 42,00</span></label>
-  <label class="card flex items-center gap-3"><input type="checkbox"> <span>#1022 - Bairro Jardim - 2x Margherita - R$ 76,00</span></label>
-  <div class="card"><p>0 de 3 selecionados</p><a class="btn inline-block mt-2" href="trip.html">Iniciar viagem</a></div>
-</div>
-  </main>
+<body class="">
+<header class="chead"><div class="chead-in"><a class="logo mk" href="available.html"><img src="../assets/img/logo.svg" alt="" width="30" height="30"><span>Pizza<b>Flow</b></span></a><div><p class="kick">Pizzaflow entregas</p><h2>Pedidos disponíveis</h2></div><span class="av r">CA</span></div></header><main class="cwrap"><p class="kick">Perto de você</p><div class="row2"><div><h1 class="h1">Prontos para retirada</h1><p class="mu">Selecione até 3 pedidos para montar sua viagem.</p></div><span class="bd s5">4 prontos</span></div><div class="list"><label class="pick card"><input type="checkbox" checked><div><div class="row2"><b class="rd">#1046</b><span class="bd s3">Pronto</span></div><h3 class="bairro">Saúde</h3><small class="bl">2× Margherita</small><div class="row2 ft"><b>R$ 76,00</b><small class="wt">há 21 min de espera</small></div></div></label><label class="pick card"><input type="checkbox" checked><div><div class="row2"><b class="rd">#1050</b><span class="bd s3">Pronto</span></div><h3 class="bairro">Paraíso</h3><small class="bl">1× Calabresa</small><div class="row2 ft"><b>R$ 48,00</b><small class="wt">há 8 min de espera</small></div></div></label><label class="pick card"><input type="checkbox"><div><div class="row2"><b class="rd">#1051</b><span class="bd s3">Pronto</span></div><h3 class="bairro">Ipiranga</h3><small class="bl">2× Portuguesa</small><div class="row2 ft"><b>R$ 98,00</b><small class="wt">há 14 min de espera</small></div></div></label><label class="pick card"><input type="checkbox"><div><div class="row2"><b class="rd">#1052</b><span class="bd s3">Pronto</span></div><h3 class="bairro">Cambuci</h3><small class="bl">1× Margherita</small><div class="row2 ft"><b>R$ 44,00</b><small class="wt">há 18 min de espera</small></div></div></label></div></main><div class="dock"><div class="dock-in"><div><b>2 de 3 selecionados</b><br><small>Tudo certo para começar</small></div><a class="btn" href="trip.html">Iniciar viagem <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></div></div>
 </body>
 </html>
