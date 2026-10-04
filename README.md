@@ -122,7 +122,7 @@ sequenceDiagram
 ## Equipe
 
 - **Eric Fabrício Dantas Linhares** - 202614320012 | [GitHub](https://github.com/ericfabricio7) | [LinkedIn](https://www.linkedin.com/in/eric-fabricio/)
-- **Gabriel Leite Cavalcanti de Albuquerque** - 202614320027 | [GitHub](https://github.com/leitecavalcanti-lab) | [LinkedIn](https://www.linkedin.com/in/PREENCHER/)
+- **Gabriel Leite Cavalcanti de Albuquerque** - 202614320027 | [GitHub](https://github.com/leitecavalcanti-lab) | [LinkedIn](https://www.linkedin.com/in/gabriel-cavalcanti-241a44432/)
 - **José Henrique de Sousa Leite** - 202614320021 | [GitHub](https://github.com/josehenrique26) | [LinkedIn](https://www.linkedin.com/in/jos%C3%A9-henrique-de-sousa-leite-b861463b4)
 - **Mateus Menezes de Souza** - 202614320031 | [GitHub](https://github.com/mateussmenezes) | [LinkedIn](https://www.linkedin.com/in/mateus-menezes-705782406/)
 
@@ -130,7 +130,7 @@ sequenceDiagram
 
 ## Documentação & Recursos
 
-- **Pitch / Apresentação:** [PREENCHER: link dos slides da proposta]
+- **Pitch / Apresentação:** [Link dos slides da proposta](https://docs.google.com/presentation/d/17q8Fk-A6t5QaA2-35b7DVFbNQAJvRsF4eevo3J0W1Rc/edit?usp=drivesdk)
 - **Protótipos / Design:** [Ver protótipos](docs/prototypes/) | [Figma](https://www.figma.com/make/O4jmNIXp7j0otHUTHx6u82/PizzaFlow-Web-App-Design)
 - **Workflow / Kanban:** [GitHub Projects](https://github.com/users/josehenrique26/projects/2)
 - **Documentação do Projeto:** [Ver pasta de documentação](docs/)
