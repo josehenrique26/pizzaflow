@@ -1,14 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- Tela: Carrinho e checkout (entrega e pagamento). Etapa inicial: HTML + CSS estáticos com dados fictícios, sem JavaScript funcional. -->
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carrinho | PizzaFlow</title>
-<link rel="icon" href="../assets/img/logo.svg">
-<link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-<body class="">
-<header class="top"><div class="top-in"><a class="logo " href="menu.html"><img src="../assets/img/logo.svg" alt="" width="30" height="30"><span>Pizza<b>Flow</b></span></a><nav><a href="menu.html" class="on">Cardápio</a><a href="orders.html">Meus pedidos</a></nav><div class="acts"><a class="sq" href="../auth/login.html" aria-label="Entrar"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg></a><a class="sq red" href="cart.html" aria-label="Carrinho com 2 itens"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 2h2l2.7 12.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6L22 7H5"/></svg><i class="dot">2</i></a></div></div></header><main class="wrap"><a class="back" href="menu.html"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg> Voltar</a><p class="kick">Etapa 1 de 2</p><h1 class="h1">Seu carrinho</h1><p class="mu">Confira os itens antes de continuar.</p><div class="cols"><div class="stack"><section class="card"><div class="it"><img src="../assets/img/pizzas/pizza-1.jpg" alt="" width="80" height="80"><div class="inf"><b>Calabresa</b><small>Calabresa artesanal, cebola roxa e azeitonas</small><b>R$ 42,00</b></div><div class="qty"><button type="button" aria-label="Remover"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button><span>1</span><button type="button" aria-label="Aumentar"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></button></div></div><div class="it"><img src="../assets/img/pizzas/pizza-1.jpg" alt="" width="80" height="80"><div class="inf"><b>Coca-Cola 2L</b><small>Gelada para acompanhar seu pedido</small><b>R$ 12,00</b></div><div class="qty"><button type="button" aria-label="Remover"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button><span>1</span><button type="button" aria-label="Aumentar"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></button></div></div><div class="f"><label for="ob">Observações do pedido</label><textarea id="ob" rows="3" placeholder="Ex: sem cebola, borda bem assada..."></textarea></div></section><form class="card" id="entrega" action="order-tracking.html"><p class="kick">Etapa 2 de 2</p><h2 class="h3">Entrega e pagamento</h2><div class="fg"><div class="f"><label for="cep">CEP</label><input id="cep" name="cep" inputmode="numeric" placeholder="00000-000"></div><div class="f w2"><label for="rua">Rua</label><input id="rua" name="rua" placeholder="Rua das Flores"></div><div class="f"><label for="nu">Número</label><input id="nu" name="numero" placeholder="128"></div><div class="f"><label for="ba">Bairro</label><input id="ba" name="bairro" placeholder="Saúde"></div><div class="f"><label for="co">Complemento</label><input id="co" name="complemento" placeholder="Apto 42, bloco B"></div></div><p class="lb">Forma de pagamento</p><div class="opts"><label class="opt"><input type="radio" name="pg" checked> Pix</label><label class="opt"><input type="radio" name="pg"> Cartão na entrega</label><label class="opt"><input type="radio" name="pg"> Dinheiro</label></div><button class="btn block" type="submit">Finalizar pedido</button></form></div><aside class="card sum"><h2 class="h3">Resumo do pedido</h2><dl><dt>1× Calabresa</dt><dd>R$ 42,00</dd><dt>1× Coca-Cola 2L</dt><dd>R$ 12,00</dd><dt>Subtotal</dt><dd>R$ 54,00</dd><dt>Taxa de entrega</dt><dd>R$ 6,00</dd></dl><p class="tot"><span>Total</span><b>R$ 60,00</b></p><a class="btn block" href="#entrega">Continuar para entrega</a><p class="safe"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Compra segura e dados protegidos</p></aside></div></main>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrinho | PizzaFlow</title>
+    <link rel="icon" href="../assets/img/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="">
+    <header class="top">
+      <div class="top-in">
+        <a class="logo" href="menu.html"
+          ><img
+            src="../assets/img/logo.svg"
+            alt=""
+            width="30"
+            height="30"
+          /><span>Pizza<b>Flow</b></span></a
+        >
+        <nav>
+          <a href="menu.html" class="on">Cardápio</a
+          ><a href="orders.html">Meus pedidos</a>
+        </nav>
+        <div class="acts">
+          <a class="sq" href="../auth/login.html" aria-label="Entrar"
+            ><svg
+              class="i"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"
+              /></svg></a
+          ><a class="sq red" href="cart.html" aria-label="Carrinho com 2 itens"
+            ><svg
+              class="i"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path
+                d="M2 2h2l2.7 12.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6L22 7H5"
+              /></svg
+            ><i class="dot">2</i></a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <a class="back" href="menu.html"
+        ><svg
+          class="i"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+        Voltar</a
+      >
+      <p class="kick">Etapa 1 de 2</p>
+      <h1 class="h1">Seu carrinho</h1>
+      <p class="mu">Confira os itens antes de continuar.</p>
+      <div class="cols">
+        <div class="stack">
+          <section class="card">
+            <div class="it">
+              <img
+                src="../assets/img/pizzas/pizza-1.jpg"
+                alt=""
+                width="80"
+                height="80"
+              />
+              <div class="inf">
+                <b>Calabresa</b
+                ><small>Calabresa artesanal, cebola roxa e azeitonas</small
+                ><b>R$ 42,00</b>
+              </div>
+              <div class="qty">
+                <button type="button" aria-label="Remover">
+                  <svg
+                    class="i"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg></button
+                ><span>1</span
+                ><button type="button" aria-label="Aumentar">
+                  <svg
+                    class="i"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5v14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="it">
+              <img
+                src="../assets/img/pizzas/pizza-1.jpg"
+                alt=""
+                width="80"
+                height="80"
+              />
+              <div class="inf">
+                <b>Coca-Cola 2L</b
+                ><small>Gelada para acompanhar seu pedido</small><b>R$ 12,00</b>
+              </div>
+              <div class="qty">
+                <button type="button" aria-label="Remover">
+                  <svg
+                    class="i"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg></button
+                ><span>1</span
+                ><button type="button" aria-label="Aumentar">
+                  <svg
+                    class="i"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5v14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="f">
+              <label for="ob">Observações do pedido</label
+              ><textarea
+                id="ob"
+                rows="3"
+                placeholder="Ex: sem cebola, borda bem assada..."
+              ></textarea>
+            </div>
+          </section>
+          <form class="card" id="entrega" action="order-tracking.html">
+            <p class="kick">Etapa 2 de 2</p>
+            <h2 class="h3">Entrega e pagamento</h2>
+            <div class="fg">
+              <div class="f">
+                <label for="cep">CEP</label
+                ><input
+                  id="cep"
+                  name="cep"
+                  inputmode="numeric"
+                  placeholder="00000-000"
+                />
+              </div>
+              <div class="f w2">
+                <label for="rua">Rua</label
+                ><input id="rua" name="rua" placeholder="Rua das Flores" />
+              </div>
+              <div class="f">
+                <label for="nu">Número</label
+                ><input id="nu" name="numero" placeholder="128" />
+              </div>
+              <div class="f">
+                <label for="ba">Bairro</label
+                ><input id="ba" name="bairro" placeholder="Saúde" />
+              </div>
+              <div class="f">
+                <label for="co">Complemento</label
+                ><input
+                  id="co"
+                  name="complemento"
+                  placeholder="Apto 42, bloco B"
+                />
+              </div>
+            </div>
+            <p class="lb">Forma de pagamento</p>
+            <div class="opts">
+              <label class="opt"
+                ><input type="radio" name="pg" checked /> Pix</label
+              ><label class="opt"
+                ><input type="radio" name="pg" /> Cartão na entrega</label
+              ><label class="opt"
+                ><input type="radio" name="pg" /> Dinheiro</label
+              >
+            </div>
+            <button class="btn block" type="submit">Finalizar pedido</button>
+          </form>
+        </div>
+        <aside class="card sum">
+          <h2 class="h3">Resumo do pedido</h2>
+          <dl>
+            <dt>1× Calabresa</dt>
+            <dd>R$ 42,00</dd>
+            <dt>1× Coca-Cola 2L</dt>
+            <dd>R$ 12,00</dd>
+            <dt>Subtotal</dt>
+            <dd>R$ 54,00</dd>
+            <dt>Taxa de entrega</dt>
+            <dd>R$ 6,00</dd>
+          </dl>
+          <p class="tot"><span>Total</span><b>R$ 60,00</b></p>
+          <a class="btn block" href="#entrega">Continuar para entrega</a>
+          <p class="safe">
+            <svg
+              class="i"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+            Compra segura e dados protegidos
+          </p>
+        </aside>
+      </div>
+    </main>
+  </body>
 </html>

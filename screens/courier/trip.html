@@ -1,14 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- Tela: Viagem atual com endereços completos e confirmação por código. Etapa inicial: HTML + CSS estáticos com dados fictícios, sem JavaScript funcional. -->
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Viagem atual | PizzaFlow</title>
-<link rel="icon" href="../assets/img/logo.svg">
-<link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-<body class="">
-<header class="chead"><div class="chead-in"><a class="logo mk" href="available.html"><img src="../assets/img/logo.svg" alt="" width="30" height="30"><span>Pizza<b>Flow</b></span></a><div><p class="kick">Pizzaflow entregas</p><h2>Viagem atual</h2></div><span class="av r">CA</span></div></header><main class="cwrap"><section class="card prog"><div class="track"><i></i></div><div class="row2"><b>0 de 3 entregues</b><small class="mu">Próxima parada a 8 min</small></div></section><div class="stops"><article class="stop"><span class="n">1</span><div class="card"><div class="row2"><p><b class="rd">#1046</b> <span class="bd s4">Saiu para entrega</span></p><small class="mu">Próxima parada</small></div><h3 class="addr">Rua das Flores, 128</h3><small class="mu">Saúde · Apto 42, bloco B</small><div class="cli"><span class="av">CA</span><div><b>Camila Alves</b><br><small class="mu">(11) 99842-2771</small></div></div><div class="a2"><a class="btn soft" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+das+Flores%2C+128" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg> Abrir no mapa</a><form class="cf" action="available.html"><label for="c1">Código do cliente</label><input id="c1" name="codigo" inputmode="numeric" maxlength="4" placeholder="4 dígitos" autocomplete="off"><button class="btn" type="submit">Confirmar entrega</button></form></div></article><article class="stop"><span class="n">2</span><div class="card"><div class="row2"><p><b class="rd">#1045</b> <span class="bd s4">Saiu para entrega</span></p><small class="mu">24 min</small></div><h3 class="addr">Rua Vergueiro, 940</h3><small class="mu">Aclimação · Casa</small><div class="cli"><span class="av">JM</span><div><b>João Martins</b><br><small class="mu">(11) 99843-2771</small></div></div><div class="a2"><a class="btn soft" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Vergueiro%2C+940" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg> Abrir no mapa</a><button class="btn" type="button" disabled>Confirmar entrega</button></div></article><article class="stop"><span class="n">3</span><div class="card"><div class="row2"><p><b class="rd">#1044</b> <span class="bd s4">Saiu para entrega</span></p><small class="mu">36 min</small></div><h3 class="addr">Rua Topázio, 215</h3><small class="mu">Paraíso · Casa</small><div class="cli"><span class="av">BR</span><div><b>Beatriz Rocha</b><br><small class="mu">(11) 99844-2771</small></div></div><div class="a2"><a class="btn soft" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Topázio%2C+215" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg> Abrir no mapa</a><button class="btn" type="button" disabled>Confirmar entrega</button></div></article></div></main>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viagem atual | PizzaFlow</title>
+    <link rel="icon" href="../assets/img/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="">
+    <header class="chead">
+      <div class="chead-in">
+        <a class="logo mk" href="available.html">
+          <img src="../assets/img/logo.svg" alt="" width="30" height="30" />
+          <span>Pizza<b>Flow</b></span>
+        </a>
+
+        <div>
+          <p class="kick">Pizzaflow entregas</p>
+          <h2>Viagem atual</h2>
+        </div>
+
+        <span class="av r">CA</span>
+      </div>
+    </header>
+
+    <main class="cwrap">
+      <section class="card prog">
+        <div class="track"><i></i></div>
+        <div class="row2">
+          <b>0 de 3 entregues</b>
+          <small class="mu">Próxima parada a 8 min</small>
+        </div>
+      </section>
+
+      <div class="stops">
+        <article class="stop">
+          <span class="n">1</span>
+          <div class="card">
+            <div class="row2">
+              <p>
+                <b class="rd">#1046</b>
+                <span class="bd s4">Saiu para entrega</span>
+              </p>
+              <small class="mu">Próxima parada</small>
+            </div>
+
+            <h3 class="addr">Rua das Flores, 128</h3>
+            <small class="mu">Saúde · Apto 42, bloco B</small>
+
+            <div class="cli">
+              <span class="av">CA</span>
+              <div>
+                <b>Camila Alves</b><br />
+                <small class="mu">(11) 99842-2771</small>
+              </div>
+            </div>
+
+            <div class="a2">
+              <a
+                class="btn soft"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Rua+das+Flores%2C+128"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="i"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15" />
+                </svg>
+                Abrir no mapa
+              </a>
+
+              <form class="cf" action="available.html">
+                <label for="c1">Código do cliente</label>
+                <input
+                  id="c1"
+                  name="codigo"
+                  inputmode="numeric"
+                  maxlength="4"
+                  placeholder="4 dígitos"
+                  autocomplete="off"
+                />
+                <button class="btn" type="submit">Confirmar entrega</button>
+              </form>
+            </div>
+          </div>
+        </article>
+
+        <article class="stop">
+          <span class="n">2</span>
+          <div class="card">
+            <div class="row2">
+              <p>
+                <b class="rd">#1050</b>
+                <span class="bd s4">Saiu para entrega</span>
+              </p>
+              <small class="mu">24 min</small>
+            </div>
+
+            <h3 class="addr">Rua do Bosque, 315</h3>
+            <small class="mu">Paraíso · Casa</small>
+
+            <div class="cli">
+              <span class="av">DN</span>
+              <div>
+                <b>Diego Nunes</b><br />
+                <small class="mu">(11) 99890-1122</small>
+              </div>
+            </div>
+
+            <div class="a2">
+              <a
+                class="btn soft"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Rua+do+Bosque%2C+315"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="i"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15" />
+                </svg>
+                Abrir no mapa
+              </a>
+              <button class="btn" type="button" disabled>
+                Confirmar entrega
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="stop">
+          <span class="n">3</span>
+          <div class="card">
+            <div class="row2">
+              <p>
+                <b class="rd">#1051</b>
+                <span class="bd s4">Saiu para entrega</span>
+              </p>
+              <small class="mu">36 min</small>
+            </div>
+
+            <h3 class="addr">Rua Topázio, 215</h3>
+            <small class="mu">Ipiranga · Casa</small>
+
+            <div class="cli">
+              <span class="av">HC</span>
+              <div>
+                <b>Helena Costa</b><br />
+                <small class="mu">(11) 99844-2771</small>
+              </div>
+            </div>
+
+            <div class="a2">
+              <a
+                class="btn soft"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Topázio%2C+215"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="i"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15" />
+                </svg>
+                Abrir no mapa
+              </a>
+              <button class="btn" type="button" disabled>
+                Confirmar entrega
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>
