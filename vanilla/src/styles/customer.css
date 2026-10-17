@@ -1,0 +1,17 @@
+/* src/styles/customer.css — estilos das telas do cliente (acesso e erros). Variáveis com prefixo --peddi-. */
+:root { --peddi-orange: #ff6b00; --peddi-ink: #14171f; --peddi-muted: #75716c; --peddi-line: #e7e2da; --peddi-error: #d93b2b; }
+.access { max-width: 560px; margin: 0 auto; padding: 48px 20px; color: var(--peddi-ink); }
+.access h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 12px; }
+.access__lead, .access__hint { color: var(--peddi-muted); }
+.access__form { display: grid; gap: 8px; margin: 24px 0; }
+.access__form label { font-weight: 600; }
+.access__form input { padding: 14px; border: 1px solid var(--peddi-line); border-radius: 12px; font: inherit; }
+.access__form input:focus-visible, .access button:focus-visible, .access a:focus-visible { outline: 3px solid var(--peddi-orange); outline-offset: 2px; }
+.access__form input[aria-invalid="true"] { border-color: var(--peddi-error); }
+.access__error { margin: 0; color: var(--peddi-error); font-size: 14px; }
+.access__tabs { display: flex; gap: 8px; margin-bottom: 8px; }
+.access__tab, .access__chip { padding: 8px 14px; border: 1px solid var(--peddi-line); border-radius: 999px; background: #fff; font: inherit; cursor: pointer; }
+.access__tab[aria-pressed="true"] { background: var(--peddi-ink); border-color: var(--peddi-ink); color: #fff; }
+.access__submit { display: inline-block; padding: 14px 20px; border: 0; border-radius: 12px; background: var(--peddi-orange); color: var(--peddi-ink); font: inherit; font-weight: 700; text-align: center; cursor: pointer; }
+.access__examples { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 14px; color: var(--peddi-muted); }
+.access__hint { margin-top: 32px; font-size: 14px; }
